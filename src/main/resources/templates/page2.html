@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Page 2</title></head>
+<body>
+<form th:action="@{/page3}" method="post" th:object="${userForm}">
+    Email: <input type="email" th:field="*{email}" /><br/>
+    Phone: <input type="text" th:field="*{phone}" /><br/>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
